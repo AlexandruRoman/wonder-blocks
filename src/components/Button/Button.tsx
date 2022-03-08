@@ -1,11 +1,11 @@
 /** @jsxImportSource theme-ui */
 
-interface ButtonProps {
+export type ButtonProps = {
   /**
    * Button contents
    */
   label: string;
-}
+};
 
 /**
  * Primary UI component for user interaction

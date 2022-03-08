@@ -16,7 +16,11 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "noImplicitAny": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    "declaration": true,
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "example", "rollup.config.js"]
 }
