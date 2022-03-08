@@ -1,3 +1,5 @@
+/** @jsxImportSource theme-ui */
+
 interface ButtonProps {
   /**
    * Button contents
@@ -9,5 +11,15 @@ interface ButtonProps {
  * Primary UI component for user interaction
  */
 export const Button = ({ label }: ButtonProps) => {
-  return <button type="button">{label}</button>;
+  return (
+    <button
+      sx={{
+        color: "primary",
+        fontFamily: "heading",
+      }}
+      type="button"
+    >
+      {label}
+    </button>
+  );
 };
