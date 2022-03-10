@@ -1,13 +1,13 @@
 // .storybook/preview.js
 
-import { theme } from "../src/theme";
-import { ThemeProvider } from "theme-ui";
+import { theme } from "../src/theme/theme";
+import ThemeContext from "../src/theme/ThemeContext";
 
 export const decorators = [
   (Story) => (
-    <ThemeProvider theme={theme}>
+    <ThemeContext.Provider value={theme}>
       <Story />
-    </ThemeProvider>
+    </ThemeContext.Provider>
   ),
 ];
 
